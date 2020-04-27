@@ -1,8 +1,13 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('users')
 class User {
-
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -20,7 +25,6 @@ class User {
 
   @UpdateDateColumn()
   update_at: Date;
-
 }
 
 export default User;
