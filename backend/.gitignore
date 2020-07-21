@@ -4,3 +4,4 @@ tmp/*
 coverage/
 .idea/
 .vscode/
+.env
